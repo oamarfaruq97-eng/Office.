@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact | MR Mecaw</title>
+</head>
+<body class="min-h-screen bg-slate-100 font-sans text-slate-800">
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #d92f35;
+      }
+    </style>
+
+    <div class="mx-auto max-w-6xl px-3 py-6 sm:px-4 sm:py-8">
+        <header class="overflow-hidden rounded-2xl shadow-lg shadow-red-200/60 ring-1 ring-red-100">
+            <div class="flex flex-col gap-4 bg-gradient-to-r from-[#b91c1c] via-[#d92f35] to-[#7f1d1d] px-4 py-4 text-white sm:px-5">
+                <div class="flex items-center justify-between gap-3">
+                    <div class="flex items-center gap-3">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-white/15 text-lg font-bold shadow-inner">M</div>
+                        <div>
+                            <p class="text-[10px] uppercase tracking-[0.2em] text-red-100 sm:text-xs">Brand</p>
+                            <h1 class="text-lg font-semibold sm:text-xl">MR Mecaw</h1>
+                        </div>
+                    </div>
+
+                    <a href="login.html" class="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 text-xs font-semibold text-red-700 shadow-md transition hover:scale-[1.02] hover:bg-red-50 sm:text-sm" aria-label="Login">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 21a8 8 0 0 0-16 0"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        <span>Login</span>
+                    </a>
+                </div>
+
+                <nav class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                    <div class="relative w-full sm:w-auto sm:max-w-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="7"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" placeholder="Search..." class="h-10 w-full rounded-full border border-white/30 bg-white/10 pl-9 pr-3 text-sm text-white placeholder:text-red-100 outline-none transition focus:bg-white/15 focus:ring-2 focus:ring-white/50 sm:w-40">
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-2">
+                        <a href="index.html" class="rounded-full px-3 py-2 text-sm font-medium text-red-50 transition hover:bg-white/10 hover:text-white">Home</a>
+                        <a href="about.html" class="rounded-full px-3 py-2 text-sm font-medium text-red-50 transition hover:bg-white/10 hover:text-white">About</a>
+                        <a href="contact.html" class="rounded-full px-3 py-2 text-sm font-medium text-red-50 transition hover:bg-white/10 hover:text-white" aria-current="page">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <main class="mx-auto max-w-6xl px-4 pb-12">
+        <section class="overflow-hidden rounded-2xl bg-white shadow-lg shadow-red-200/40 ring-1 ring-slate-200">
+            <div class="bg-gradient-to-r from-[#b91c1c] via-[#d92f35] to-[#7f1d1d] px-6 py-10 text-center text-white sm:px-10">
+                <p class="text-sm font-semibold uppercase tracking-[0.25em] text-red-100">Get in touch</p>
+                <h2 class="mt-2 text-3xl font-bold">Contact Us</h2>
+                <p class="mx-auto mt-3 max-w-xl text-sm text-red-50">Have a question or want to work with us? Send us a message and we'll get back to you.</p>
+            </div>
+
+            <form action="successfull.html" method="get" class="mx-auto grid max-w-3xl gap-5 p-6 sm:grid-cols-2 sm:p-10">
+                <div>
+                    <label for="name" class="mb-2 block text-sm font-medium text-slate-700">Full name</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-red-500 focus:ring-4 focus:ring-red-100">
+                </div>
+
+                <div>
+                    <label for="email" class="mb-2 block text-sm font-medium text-slate-700">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-red-500 focus:ring-4 focus:ring-red-100">
+                </div>
+
+                <div class="sm:col-span-2">
+                    <label for="subject" class="mb-2 block text-sm font-medium text-slate-700">Subject</label>
+                    <input id="subject" name="subject" type="text" required placeholder="What would you like to discuss?" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-red-500 focus:ring-4 focus:ring-red-100">
+                </div>
+
+                <div class="sm:col-span-2">
+                    <label for="message" class="mb-2 block text-sm font-medium text-slate-700">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Write your message here..." class="w-full resize-y rounded-xl border border-slate-300 bg-slate-50 px-4 py-3 text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-red-500 focus:ring-4 focus:ring-red-100"></textarea>
+                </div>
+
+                <div class="sm:col-span-2">
+                    <button type="submit" class="w-full rounded-xl bg-red-600 px-6 py-3 font-semibold text-white shadow-md shadow-red-200 transition hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-200 sm:w-auto">Send message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
